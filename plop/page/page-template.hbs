@@ -1,0 +1,23 @@
+import type { NextPage } from 'next';
+import React from 'react';
+import { GetStaticProps } from 'next';
+
+// import { Component } from '@styles/pages/{{getPath folder (createFilename name)}}.styled';
+
+export const getStaticProps: GetStaticProps = async () => {
+    return {
+        props: {
+            title: '{{name}}',
+        },
+    };
+};
+
+const {{name}}: NextPage = () => {
+    return (
+        <div>
+            <div>{{name}}</div>
+        </div>
+    );
+};
+
+export default {{name}};

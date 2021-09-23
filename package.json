@@ -1,22 +1,48 @@
 {
-  "name": "dad-jokes",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "11.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "@types/react": "17.0.24",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2",
-    "typescript": "4.4.3"
-  }
+    "name": "dad-jokes",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "test": "jest --watch",
+        "cypress": "cypress open",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook",
+        "plop": "plop"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.4.1",
+        "@emotion/styled": "^11.3.0",
+        "@mui/material": "^5.0.0",
+        "@mui/styles": "^5.0.0",
+        "@testing-library/react-hooks": "^7.0.2",
+        "axios": "^0.21.4",
+        "next": "11.1.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "swr": "^1.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.5",
+        "@storybook/addon-actions": "^6.3.8",
+        "@storybook/addon-essentials": "^6.3.8",
+        "@storybook/addon-links": "^6.3.8",
+        "@storybook/react": "^6.3.8",
+        "@testing-library/cypress": "^8.0.1",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^12.1.0",
+        "@types/react": "17.0.24",
+        "babel-jest": "^27.2.1",
+        "babel-loader": "^8.2.2",
+        "cypress": "^8.4.1",
+        "eslint": "7.32.0",
+        "eslint-config-next": "11.1.2",
+        "jest": "^27.2.1",
+        "plop": "^2.7.4",
+        "prettier": "^2.4.1",
+        "typescript": "4.4.3"
+    }
 }
